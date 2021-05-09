@@ -231,7 +231,7 @@ bindsym $mod+r mode "resize"
 #
     bindsym Print exec grimshot --notify copy screen
     bindsym Shift+Print exec grimshot --notify save screen
-    bindsym Ctrl+Print exec grimshot --notifycopy area
+    bindsym Ctrl+Print exec grimshot --notify copy area
     bindsym Shift+Ctrl+Print exec grimshot --notify save area
     bindsym Alt+Print exec grimshot --notify copy active
     bindsym Shift+Alt+Print exec grimshot --notify save active
