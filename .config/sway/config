@@ -59,7 +59,7 @@ bindsym $mod+F9 exec swaymsg output eDP-1 scale 1.25 && swaymsg output DP-3 scal
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-set $swaylock 'swaylock -f -i ~/Pictures/bg.jpg -s fill'
+set $swaylock 'loginctl lock-session && swaylock -f -i ~/Pictures/bg.jpg -s fill'
 exec swayidle -w \
 	timeout 300 $swaylock \
 	timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
